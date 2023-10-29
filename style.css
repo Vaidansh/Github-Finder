@@ -27,6 +27,7 @@ body {
 .search {
   display: flex;
   width: 50%;
+  max-width: 60rem;
 }
 
 .search input {
@@ -46,8 +47,75 @@ body {
 
 .primary-btn:hover {
   background-color: rgb(80, 7, 80);
+  cursor: pointer;
 }
 
 .primary-btn:active {
   background-color: rgb(202, 7, 202);
+}
+
+/* Profile Card */
+#profileContainer {
+  width: 100%;
+}
+.profile-box {
+  margin: auto;
+  padding: 4rem 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 78rem;
+  transition: 0.3s ease-out;
+}
+
+.profile-box:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-section button {
+  align-self: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.left h1 {
+  font-size: 1.6rem;
+}
+
+.avatar {
+  height: 10rem;
+  width: 10rem;
+}
+
+.avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about {
+  margin: 2rem;
+}
+
+.status {
+  display: grid;
+  margin: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
